@@ -1,4 +1,3 @@
-/* Reset some basic elements */
 * {
     margin: 0;
     padding: 0;
@@ -6,99 +5,73 @@
 }
 
 body {
-    background-color: #f0f0f0;
-    font-family: "Times New Roman", Times, serif;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Classic header look */
-h1, h2, h3 {
-    font-family: "Georgia", serif;
-    color: #222;
-    margin-bottom: 15px;
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-column {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.right-column {
+    width: 70%;
 }
 
 h1 {
-    font-size: 3em;
-    border-bottom: 3px solid #333;
-    padding-bottom: 10px;
-}
-
-h2 {
-    font-size: 2.5em;
-}
-
-h3 {
-    font-size: 2em;
-}
-
-/* Paragraph styling */
-p {
-    margin: 10px 0;
-    font-size: 1.2em;
-    text-align: justify;
-}
-
-/* Links */
-a {
-    color: #0000EE;
-    text-decoration: underline;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-/* Navigation bar (horizontal classic look) */
-nav {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
-nav a {
-    color: white;
-    padding: 10px 20px;
+ul {
+    list-style-type: none;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.links a {
     text-decoration: none;
-    font-size: 1.2em;
-    display: inline-block;
+    font-size: 1.2rem;
+    color: black;
 }
 
-nav a:hover {
-    background-color: #555;
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-/* Buttons (retro look) */
-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-button:hover {
-    background-color: #555;
+a {
+    color: black;
+    text-decoration: none;
 }
 
-/* Footer section */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    font-size: 0.9em;
+a:hover {
+    text-decoration: underline;
 }
 
-footer p {
-    margin: 0;
+.right-column a {
+    margin-right: 10px;
 }
 
