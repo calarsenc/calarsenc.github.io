@@ -10,25 +10,30 @@ body {
     color: black;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start; /* Align content at the top so it doesn’t center vertically */
+    min-height: 100vh; /* Ensure the body stretches to fit all content */
     margin: 0;
+    padding: 20px; /* Add padding to ensure content isn't cut off at the edges */
+    overflow-y: auto; /* Allow scrolling if content exceeds viewport */
 }
 
 .container {
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .left-column {
-    width: 30%;
-    padding-right: 20px;
+    width: 100%; /* Take full width when stacked vertically */
+    padding-right: 0;
+    margin-bottom: 20px; /* Add spacing between sections */
 }
 
 .right-column {
-    width: 70%;
+    width: 100%; /* Take full width for text */
+    padding: 0;
 }
 
 h1 {
@@ -38,6 +43,7 @@ h1 {
 
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .links li {
@@ -60,6 +66,7 @@ ul {
 p {
     margin-bottom: 20px;
     line-height: 1.5;
+    word-wrap: break-word; /* Ensure long words or links break */
 }
 
 a {
@@ -74,4 +81,38 @@ a:hover {
 .right-column a {
     margin-right: 10px;
 }
+
+/* Ensure all text is visible */
+.right-column {
+    overflow: visible;
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+/* Styling for bold quote section */
+.quote {
+    font-weight: bold;
+    font-style: italic;
+    margin: 20px 0;
+    display: block;
+}
+
 
