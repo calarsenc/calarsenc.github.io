@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,49 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Aleksander Larsen</title>
     <link rel="stylesheet" href="style.css">
-       <style>
-    body {
-    background-color: #f4f4f4;
-}
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
-  </style>
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            flex-wrap: nowrap;
+        }
+
+        .header img {
+            max-width: 150px;
+            height: auto;
+            /* Removed border-radius to keep the image rectangular */
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            flex-shrink: 1;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .quote {
+            display: block;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* Adjust for smaller screens */
+        @media screen and (max-width: 600px) {
+            .header img {
+                max-width: 80px;
+                margin-right: 10px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="left-column">
-            <h1>Christian Aleksander Larsen</h1>
-            <ul class="links">
-                <!--
-                <li><a href="#">Actions</a></li> 
-                <li><a href="writings.html">Writings</a></li>
-                <li><a href="lists.html">Lists</a></li>
-            </ul> -->
-        </div>
-        <div class="right-column">
+        <div class="header">
             <img src="https://i.imgur.com/lEbjSlR.png" alt="Christian Larsen Photo" class="profile-image">
-
+            <h1>Christian Aleksander Larsen</h1>
+        </div>
+        <div class="content">
             <p>
-
-<p>
-    Technological generalist and fundraiser, nomadic, spending most of my time in NY and SF.
-    <span class="quote">Causal experimentation over correlative understanding</span>
-    I enjoy talking to and helping anyone interested in Whole Brain Emulation, and Brain Preservation.
-
-Let's not spend our precious time fixing what is broken. Let us create and experience something better together.
-
-I adhere to <a href="http://sl4.org/crocker.html"style="color: blue;">Crocker's Rules </a>, so you can
-prioritize information when talking to me.
-If you want to give me feedback anonymously on anything, you can do so <strong><a href="https://www.admonymous.co/calc" target="_blank" style="color: blue;">here</a></strong>.
-
-
-</p>
-<p>
-You can contact me on: calarsenc at gmail dot com
-</p>
-Drink from the Pierian spring. Feel the bliss, know our unity since abiogenesis. 
-<p>
-</p>
-                <a href="https://x.com/calarsenc">twitter/x</a> | <a href="https://github.com/calarsenc">Github</a> | <a href="https://uiri-org.github.io/os/">UIRI</a>
+                Technological generalist and fundraiser, nomadic, spending most of my time in NY and SF.
+                <span class="quote">Causal experimentation over correlative understanding</span>
+                <p></p>
+                I enjoy talking to and helping anyone interested in Whole Brain Emulation and Brain Preservation.
+            </p>
+            <p>
+                Let's not spend our precious time fixing what is broken. Let us create and experience something better together.
+            </p>
+            <p>
+                I adhere to <a href="http://sl4.org/crocker.html" style="color: blue;">Crocker's Rules</a>, so you can
+                prioritize information when talking to me.
+                If you want to give me feedback anonymously on anything, you can do so <strong><a href="https://www.admonymous.co/calc" target="_blank" style="color: blue;">here</a></strong>.
+            </p>
+            <p>
+                You can contact me at: calarsenc at gmail dot com
+            </p>
+            <p>
+                Drink from the Pierian spring. Feel the bliss, know our unity since abiogenesis.
+            </p>
+            <p>
+                <a href="https://x.com/calarsenc">Twitter/X</a> | <a href="https://github.com/calarsenc">GitHub</a> | <a href="https://uiri-org.github.io/os/">UIRI</a>
             </p>
         </div>
     </div>
